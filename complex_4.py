@@ -19,7 +19,7 @@ class Complex:
 
     # member3
     def __mul__(self, c): # return self*c
-        pass
+        return Complex(self.re*c.re - self.im*c.im, self.re*c.im + self.im*c.re)
 
 
 c1 = Complex(1,2)
